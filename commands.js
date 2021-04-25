@@ -9,3 +9,8 @@ clear: clears the terminal\n\
 ls: shows the available pages\n\
 there might be more hidden commands :O\n'
 }
+
+function notitle() {
+	var audio = new Audio('./assets/notitle.mp3');
+	audio.play();
+}
