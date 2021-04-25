@@ -1,16 +1,27 @@
 function consoleTest() {
-	console.log('a')
-	return 'a\n'
+	console.log('a');
+	return 'a\n';
 }
 
 function help() {
 	return 'help: shows this page\n\
 clear: clears the terminal\n\
 ls: shows the available pages\n\
-there might be more hidden commands :O\n'
+if you look at the page source you might find extra commands :O\n';
 }
 
+var audio = new Audio()
 function notitle() {
-	var audio = new Audio('./assets/notitle.mp3');
-	audio.play();
+	if (audio.currentTime === 0) {
+		audio = new Audio('./assets/notitle.opus');
+		audio.play();
+		return 'Now playing: No title\nType \'stop\' to stop';
+	} else {
+		return 'Already playing!'
+	}
+}
+
+function stop() {
+	audio.pause();
+	audio.currentTime = 0;
 }
