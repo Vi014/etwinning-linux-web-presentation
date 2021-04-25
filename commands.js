@@ -10,6 +10,15 @@ ls: shows the available pages\n\
 if you look at the page source you might find extra commands :O\n';
 }
 
+function ls() {
+	return 'whoami: Shows "What is free software?"\n\
+which: Shows "FOSS Terms"\n\
+history: Shows "Linux history"\n\
+uname: Shows "Linux Distributions"\n\
+vi: Shows "Common UNIX commands"\n\
+pf: Shows "Other FOSS OS\'"'
+}
+
 var audio = new Audio()
 function notitle() {
 	if (audio.currentTime === 0) {
