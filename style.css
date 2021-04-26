@@ -32,9 +32,3 @@ hr {
   border-style: inset;
   border-width: 1px;
 } 
-
-
-.flex-sm-fill text-sm-center nav-link text-light
-{
-	background-color:blue;
-}

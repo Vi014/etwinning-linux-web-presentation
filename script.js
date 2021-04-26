@@ -14,5 +14,3 @@ jQuery(function($, undefined) {
         prompt: 'root@localhost # '
     });
 });
-
-document.getElementById('terminal-wrapper').style = 'font-size: 24px;';
