@@ -19,6 +19,30 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script src="script.js"></script>
 	<script src="commands.js"></script>
+	<script src="../build/libv86.js"></script>
+	<script>
+		"use strict";
+
+		window.onload = function()
+		{
+			var emulator = window.emulator = new V86Starter({
+				wasm_path: "../build/v86.wasm",
+				memory_size: 32 * 1024 * 1024,
+				vga_memory_size: 2 * 1024 * 1024,
+				screen_container: document.getElementById("screen_container"),
+				bios: {
+					url: "../bios/seabios.bin",
+				},
+				vga_bios: {
+					url: "../bios/vgabios.bin",
+				},
+				cdrom: {
+					url: "../images/linux.iso",
+				},
+				autostart: true,
+			});
+		}
+	</script>
 </head>
 <body class="bg-secondary">
 	<div class="maindiv col-md-8 mx-auto bg-dark" width="810">
@@ -55,11 +79,18 @@
 		<p class="text-light"><code>git</code> is a VCS used for collaborative development and version control. It allows the user to roll back changes on files, and for multiple people to contribute changes to files.</p>
 		<hr>
 		<p class="text-light"><code>grep</code> is an acronym that stands for Global Regular Expression Print.
-		<code>grep</code> is a Linux / Unix command-line tool used to search for a string of characters in a specified file. The text search pattern is called a regular expression. When it finds a match, it prints the line with the result. The grep command is handy when searching through large log files.</p>
-		<hr>
-		<p class="text-light"><code>awk</code> is mostly used for pattern scanning and processing. It searches one or more files to see if they contain lines that matches with the specified patterns and then performs the associated actions. <code>awk</code> is abbreviated from the names of the developers – Aho, Weinberger, and Kernighan. It is also turing-complete, and can be used as a programming language.</p>
-		<hr>
-
-	</div>
-</body>
-</html>
+			<code>grep</code> is a Linux / Unix command-line tool used to search for a string of characters in a specified file. The text search pattern is called a regular expression. When it finds a match, it prints the line with the result. The grep command is handy when searching through large log files.</p>
+			<hr>
+			<p class="text-light"><code>awk</code> is mostly used for pattern scanning and processing. It searches one or more files to see if they contain lines that matches with the specified patterns and then performs the associated actions. <code>awk</code> is abbreviated from the names of the developers – Aho, Weinberger, and Kernighan. It is also turing-complete, and can be used as a programming language.</p>
+			<hr>
+			<h2 class="text-light"> Linux terminal</h2>
+			<p class="lead text-light">
+				Below, you'll find a full Linux enviroment in your browser! All changes are local, so feel free to experiment!
+			</p>
+			<div id="screen_container">
+				<div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+				<canvas style="display: none"></canvas>
+			</div>
+		</div>
+	</body>
+	</html>
