@@ -14,3 +14,10 @@ jQuery(function($, undefined) {
         prompt: 'root@localhost # '
     });
 });
+
+function v86Window() {
+    new WinBox("Buildroot Linux", {
+        url: "https://copy.sh/v86/?profile=buildroot",
+        background: "#343D46"
+    });
+}
