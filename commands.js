@@ -19,6 +19,10 @@ vi: Shows "Common UNIX commands"\n\
 pf: Shows "Other FOSS OS\'"'
 }
 
+function vi() {
+	window.location.replace("unixCommands.html");
+}
+
 var audio = new Audio()
 function notitle() {
 	if (audio.currentTime === 0) {
