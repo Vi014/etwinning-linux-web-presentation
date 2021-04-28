@@ -18,8 +18,18 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 30px;
 }
 
+.container-fluid {
+	padding-left: 16vw;
+	padding-right: 16vw;
+}
+
+div#term_demo {
+    width: auto !important;
+}
+
 .navbar  { 
-    
+    padding-left: 10vw;
+    padding-right: 10vw;
 	
 }
 

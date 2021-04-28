@@ -22,21 +22,22 @@
 	<script src="commands.js"></script>
 </head>
 <body class="bg-secondary">
-	<div class="maindiv col-md-8 mx-auto bg-dark" width="810">
-		<div style="padding-top: 40px;"></div>
-		<div id="term_demo" class="col-md-8 mx-auto"></div>
-		<div class="navbar col-md-8 mx-auto">
-			<nav class="nav nav-pills flex-column flex-sm-row">
-				<a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="index.html">Home</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">What is free software?</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">FOSS terms</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux history</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux distributions</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light active" href="./unixCommands.html">Common Unix commands</a>
-				<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Other FOSS OS'</a>
-
-			</nav>
-		</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="maindiv col-md-12 mx-auto bg-dark">
+				<div style="padding-top: 40px;"></div>
+				<div id="term_demo" class="col-md-12 mx-auto"></div>
+				<div class="navbar col-md-12 mx-auto">
+					<nav class="nav nav-pills flex-column flex-sm-row">
+						<a class="flex-sm-fill text-sm-center nav-link text-light" aria-current="page" href="./index.html">Home</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">What is free software?</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">FOSS terms</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux history</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux distributions</a>
+						<a class="flex-sm-fill text-sm-center nav-link active" href="./unixCommands.html">Common Unix commands</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Other FOSS OS'</a>
+					</nav>
+				</div>
 		<p class="lead text-light">
 			Using the terminal on UNIX and UNIX-like systems, may seem difficult at first glance.<br>
 			Below are some useful terminal commands that you will most likeley use if you work with UNIX systems.
@@ -64,9 +65,8 @@
 			<p class="lead text-light"> Below, you will find a complete linux terminal where you can test out various commands.<br>
 			Dont be afraid to experiment, as all of the changes are temporary!</p>
 			<button type="button" class="btn btn-secondary" onclick="v86Window()">Open terminal</button>
-
-
+			</div>
 		</div>
-
-	</body>
-	</html>
+	</div>
+</body>
+</html>
