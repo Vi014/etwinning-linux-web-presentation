@@ -18,6 +18,7 @@ jQuery(function($, undefined) {
 function v86Window() {
     new WinBox("Buildroot Linux", {
         url: "https://copy.sh/v86/?profile=buildroot",
-        background: "#343D46"
+        background: "#343D46",
+        border: "0.2em"
     });
 }
