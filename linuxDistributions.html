@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Linux</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<link href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/js-polyfills/keyboard.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.mousewheel-min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="winbox.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="script.js"></script>
+	<script src="commands.js"></script>
+</head>
+<body class="bg-secondary">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="maindiv col-md-12 mx-auto bg-dark">
+				<div style="padding-top: 40px;"></div>
+				<div id="term_demo" class="col-md-12 mx-auto"></div>
+				<div class="navbar col-md-12 mx-auto">
+					<nav class="nav nav-pills flex-column flex-sm-row">
+						<a class="flex-sm-fill text-sm-center nav-link text-light" aria-current="page" href="./index.html">Home</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">What is free software?</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">FOSS terms</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux history</a>
+						<a class="flex-sm-fill text-sm-center nav-link active" href="linuxDistributions.html">Linux distributions</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="./unixCommands.html">Common Unix commands</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Other FOSS OS'</a>
+					</nav>
+				</div>
+		<p class="lead text-light">
+			In order to understand the philosophy behind Linux and its distributions, we need to learn some basic facts about the creation of GNU/Linux.
+			<br>
+			GNU - short for "GNU's Not Unix!" - was a project started in 1983 by MIT computer scientist Richard Stallman with the goal of creating a completely free and open-source operating system, whose design would be based off the proprietary Unix.
+			<br>
+			The GNU operating system would, however, lack an actual kernel until 1991 when Helsinki computer science student Linus Torvalds published Linux (a portmentau of Linus and Unix), a Unix-like kernel which he developed as a hobby project.
+			<br>
+			The Linux kernel was published under the GNU GPL (GNU General Public License), a free software license created by Stallman, and its combination with the GNU utilities gave birth to the first free operating system
+			<br>
+			"Free" in this case means two things:
+			<ol class="lead text-light">
+				<li>The operating system itself is free to use - we do not need to pay for a license to use it</li>
+				<li>The operating system's code is free for anyone to access</li>
+			</ol>
+		</p>
+		<p class="lead text-light">
+			Ever since then, Linux started taking off in various fields of computing, being shipped in the form of various distributions - operating systems consisting of the base Linux kernel combined with all the necessary accessories (a package manager at the bare minimum)
+			<br>
+			The first distribution was Softlanding Linux System, followed by Slackware and Debian. Linux only started gaining traction as a desktop computer OS with the release of the desktop environments KDE and GNOME.
+			<br>
+			Distributions are often called distros for short.
+		</p>
+		<h2 class="text-light">Linux distributions</h2>
+		<hr>
+		
+		<table style="width: 100%"> <!-- Debian -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\0_Debian.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Debian</b> is one of the oldest Linux distros, having been in development since 1993. It places great emphasis on stability, making it popular among desktop and server users alike, and is the basis for many other distros. (e.g. Ubuntu and derivatives) Its default desktop environment is GNOME.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\0_Debian_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table style="width: 100%"> <!-- Ubuntu -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\1_Ubuntu.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Ubuntu</b> is a distro designed with the goal of bringing Linux to computer users' daily lives - a goal it has been fairly successful in, being that it's currently the most widely used Linux distro in the world. It's based off Debian, gets updates every April and October (with the October updates being long-term support releases), and has many forks whose differences vary from using a different desktop environment (e.g. Xubuntu, Lubuntu) to being made for a different use case. (e.g. Ubuntu Server, Ubuntu for IoT, Ubuntu Cloud)</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\1_Ubuntu_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- openSUSE -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\2_openSUSE.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>openSUSE</b> is a continuation of the SUSE Linux distro, owned by the American software company Novell. While it's a community project, it is sponsored by Novell. It's one of the most well-known distros and uses KDE as its default desktop environment.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\2_openSUSE_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Red Hat -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\3_Red Hat.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Red Hat Enterprise Linux</b> is the largest commercial Linux distro, enjoying high popularity among servers, workstations and corporate users. It's developed by the American company Red Hat which got purchased for 34 billion dollars in 2018, which was the larges resale value in the open source industry.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\3_Red Hat_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Fedora -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\4_Fedora.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light">Supported by Red Hat, <b>Fedora</b> is a community project aiming to create the desktop equivalent of Red Hat Enterprise Linux. Its default desktop environment is GNOME and updates get released every 6 months. It serves as the upstream sourse of Red Hat Enterprise Linux and focuses on innovation. Linus Torvalds said it is his daily driver operating system.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\4_Fedora_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- CentOS -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\5_CentOS.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>CentOS</b> (short for the Community ENTerprise Operating System) is a free and community-driven fork of Red Hat Enterprise Linux, aimed at servers and corporate users. Its team started working together with the Red Hat team while the operating systems they were working on were kept separate. In November 2017 it was determined that 109 of the world's 500 fastest supercomputers ran CentOS.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\5_CentOS_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Arch -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\6_Arch.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Arch Linux</b> is a text-based distro aimed at experienced Linux users. It aims to provide a distro as simple to use as possible - simple here not meaning "simple for the average user", but rather "simple for an experienced user to personalize as much as they want". Upon installation, Arch greets the user with nothing but a command line, the user being expected to install any further elements of the operating system themselves. This allows for a great degree of customization, examples of which you can see among the images below. Arch Linux also has a wiki with very extensive documentation, its own package manager called Pacman, and delivers updates in a rolling release model, meaning the user never has to reinstall the operating system to update. Usage of Arch is heavily dependent on the command line.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\6_Arch_SS0.png">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\6_Arch_SS1.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Manjaro -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\7_Manjaro.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Manjaro</b> is a distro based off Arch that aims to keep its high degrees of customizability while also being more user friendly and accessible. Like Arch, it features the Pacman package manager and uses the rolling release update model, however it also has several features aimed at easing the user experience: it comes with a desktop environment pre-installed, comes with multimedia decoding packages, and is able to automatically set up drivers for most hardware including graphics cards. On top of having its own wiki, Manjaro also has the advantage of working with nearly all tutorials originally made for Arch.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\7_Manjaro_SS0.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Gentoo -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\8_Gentoo.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Gentoo</b> is a distro aimed at highly experienced users who need performance that is as well-optimized as possible. This is reflected within the fact it uses the Portage package manager, which, instead of downloading pre-compiled binaries in order to install new software, compiles it all on the user's machine. As a result, the possibilities of optimizing one's software specifically for their machine are far greater than on other systems. The distro's name is also a call to this, being a reference to gentoo penguins, the fastest swimming species of penguin.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS0.png">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS1.png">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS2.png">
+				</td>
+			</tr>
+		</table>
+		
+		<hr>
+		
+		<table> <!-- Kali -->
+			<tr>
+				<td style="vertical-align: top;">
+					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\9_Kali.png">
+				</td>
+				
+				<td style="text-align: left; vertical-align: top;">
+					<p class="text-light"><b>Kali Linux</b>, formerly known as BackTrack, is a distro based off Debian's testing branch. Its intended use case is digital forensics and penetration testing, and it's equipped with around 600 tools for said purposes, such as cyber attack management tools, port scanners, packet analyzers, password crackers, SQL injection and database takeover tools and more.</p>
+				</td>
+			<tr>
+			
+			<tr style="height: 25px;"></tr>
+			
+			<tr>
+				<td colspan="2" style="vertical-align: top;">
+					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\9_Kali_SS0.png">
+				</td>
+			</tr>
+		</table>
+			
+			<hr>
+			<h2 class="text-light">Linux Terminal</h2>
+			<p class="lead text-light"> Below, you will find a complete linux terminal where you can test out various commands.<br>
+			Dont be afraid to experiment, as all of the changes are temporary!</p>
+			<button type="button" class="btn btn-secondary" onclick="v86Window()">Open terminal</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
