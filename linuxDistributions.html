@@ -20,6 +20,53 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script src="script.js"></script>
 	<script src="commands.js"></script>
+	
+	<style>	
+		#distroInfo {
+			display: flex;
+			flex-flow: column;
+		}
+		
+		#infoUpper {
+			width: 100%;
+			display: flex;
+			flex-flow: row;
+		}
+		
+		#upperImage {
+			display: flex;
+			height: 20vh;
+		}
+		
+		#infoLower {
+			height: 33vh;
+		}
+		
+		#infoLower img {
+			height: 100%; 
+			width: auto;
+		}
+		
+		@media only screen and (max-width: 1250px) {
+			#infoUpper {
+				flex-flow: column;
+			}
+			
+			#upperImage {
+				justify-content: center;
+			}
+			
+			#infoLower {
+				height: unset;
+				width: 100%;
+			}
+			
+			#infoLower img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	</style>
 </head>
 <body class="bg-secondary">
 	<div class="container-fluid">
@@ -63,226 +110,176 @@
 		<h2 class="text-light">Linux distributions</h2>
 		<hr>
 		
-		<table style="width: 100%"> <!-- Debian -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\0_Debian.png">
-				</td>
+		<div id="distroInfo"> <!-- Debian 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\0_Debian.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Debian</b> is one of the oldest Linux distros, having been in development since 1993. It places great emphasis on stability, making it popular among desktop and server users alike, and is the basis for many other distros. (e.g. Ubuntu and derivatives) Its default desktop environment is GNOME.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Debian</b> is one of the oldest Linux distros, having been in development since 1993. It places great emphasis on stability, making it popular among desktop and server users alike, and is the basis for many other distros. (e.g. Ubuntu and derivatives) Its default desktop environment is GNOME.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\0_Debian_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\0_Debian_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table style="width: 100%"> <!-- Ubuntu -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\1_Ubuntu.png">
-				</td>
+		<div id="distroInfo"> <!-- Ubuntu 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\1_Ubuntu.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Ubuntu</b> is a distro designed with the goal of bringing Linux to computer users' daily lives - a goal it has been fairly successful in, being that it's currently the most widely used Linux distro in the world. It's based off Debian, gets updates every April and October (with the October updates being long-term support releases), and has many forks whose differences vary from using a different desktop environment (e.g. Xubuntu, Lubuntu) to being made for a different use case. (e.g. Ubuntu Server, Ubuntu for IoT, Ubuntu Cloud)</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Ubuntu</b> is a distro designed with the goal of bringing Linux to computer users' daily lives - a goal it has been fairly successful in, being that it's currently the most widely used Linux distro in the world. It's based off Debian, gets updates every April and October (with the October updates being long-term support releases), and has many forks whose differences vary from using a different desktop environment (e.g. Xubuntu, Lubuntu) to being made for a different use case. (e.g. Ubuntu Server, Ubuntu for IoT, Ubuntu Cloud)</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\1_Ubuntu_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\1_Ubuntu_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- openSUSE -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\2_openSUSE.png">
-				</td>
+		<div id="distroInfo"> <!-- openSUSE 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\2_openSUSE.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>openSUSE</b> is a continuation of the SUSE Linux distro, owned by the American software company Novell. While it's a community project, it is sponsored by Novell. It's one of the most well-known distros and uses KDE as its default desktop environment.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>openSUSE</b> is a continuation of the SUSE Linux distro, owned by the American software company Novell. While it's a community project, it is sponsored by Novell. It's one of the most well-known distros and uses KDE as its default desktop environment.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\2_openSUSE_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\2_openSUSE_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Red Hat -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\3_Red Hat.png">
-				</td>
+		<div id="distroInfo"> <!-- Red Hat 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\3_Red Hat.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Red Hat Enterprise Linux</b> is the largest commercial Linux distro, enjoying high popularity among servers, workstations and corporate users. It's developed by the American company Red Hat which got purchased for 34 billion dollars in 2018, which was the larges resale value in the open source industry.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Red Hat Enterprise Linux</b> is the largest commercial Linux distro, enjoying high popularity among servers, workstations and corporate users. It's developed by the American company Red Hat which got purchased for 34 billion dollars in 2018, which was the larges resale value in the open source industry.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\3_Red Hat_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\3_Red Hat_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Fedora -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\4_Fedora.png">
-				</td>
+		<div id="distroInfo"> <!-- Fedora 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\4_Fedora.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light">Supported by Red Hat, <b>Fedora</b> is a community project aiming to create the desktop equivalent of Red Hat Enterprise Linux. Its default desktop environment is GNOME and updates get released every 6 months. It serves as the upstream sourse of Red Hat Enterprise Linux and focuses on innovation. Linus Torvalds said it is his daily driver operating system.</p>
-				</td>
-			<tr>
+				<p class="text-light">Supported by Red Hat, <b>Fedora</b> is a community project aiming to create the desktop equivalent of Red Hat Enterprise Linux. Its default desktop environment is GNOME and updates get released every 6 months. It serves as the upstream sourse of Red Hat Enterprise Linux and focuses on innovation. Linus Torvalds said it is his daily driver operating system.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\4_Fedora_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\4_Fedora_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- CentOS -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\5_CentOS.png">
-				</td>
+		<div id="distroInfo"> <!-- CentOS 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\5_CentOS.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>CentOS</b> (short for the Community ENTerprise Operating System) is a free and community-driven fork of Red Hat Enterprise Linux, aimed at servers and corporate users. Its team started working together with the Red Hat team while the operating systems they were working on were kept separate. In November 2017 it was determined that 109 of the world's 500 fastest supercomputers ran CentOS.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>CentOS</b> (short for the Community ENTerprise Operating System) is a free and community-driven fork of Red Hat Enterprise Linux, aimed at servers and corporate users. Its team started working together with the Red Hat team while the operating systems they were working on were kept separate. In November 2017 it was determined that 109 of the world's 500 fastest supercomputers ran CentOS.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\5_CentOS_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\5_CentOS_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Arch -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\6_Arch.png">
-				</td>
+		<div id="distroInfo"> <!-- Arch 2 screenshots -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\6_Arch.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Arch Linux</b> is a text-based distro aimed at experienced Linux users. It aims to provide a distro as simple to use as possible - simple here not meaning "simple for the average user", but rather "simple for an experienced user to personalize as much as they want". Upon installation, Arch greets the user with nothing but a command line, the user being expected to install any further elements of the operating system themselves. This allows for a great degree of customization, examples of which you can see among the images below. Arch Linux also has a wiki with very extensive documentation, its own package manager called Pacman, and delivers updates in a rolling release model, meaning the user never has to reinstall the operating system to update. Usage of Arch is heavily dependent on the command line.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Arch Linux</b> is a text-based distro aimed at experienced Linux users. It aims to provide a distro as simple to use as possible - simple here not meaning "simple for the average user", but rather "simple for an experienced user to personalize as much as they want". Upon installation, Arch greets the user with nothing but a command line, the user being expected to install any further elements of the operating system themselves. This allows for a great degree of customization, examples of which you can see among the images below. Arch Linux also has a wiki with very extensive documentation, its own package manager called Pacman, and delivers updates in a rolling release model, meaning the user never has to reinstall the operating system to update. Usage of Arch is heavily dependent on the command line.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\6_Arch_SS0.png">
+			</div>
 			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\6_Arch_SS0.png">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\6_Arch_SS1.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\6_Arch_SS1.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Manjaro -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\7_Manjaro.png">
-				</td>
+		<div id="distroInfo"> <!-- Manjaro 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\7_Manjaro.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Manjaro</b> is a distro based off Arch that aims to keep its high degrees of customizability while also being more user friendly and accessible. Like Arch, it features the Pacman package manager and uses the rolling release update model, however it also has several features aimed at easing the user experience: it comes with a desktop environment pre-installed, comes with multimedia decoding packages, and is able to automatically set up drivers for most hardware including graphics cards. On top of having its own wiki, Manjaro also has the advantage of working with nearly all tutorials originally made for Arch.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Manjaro</b> is a distro based off Arch that aims to keep its high degrees of customizability while also being more user friendly and accessible. Like Arch, it features the Pacman package manager and uses the rolling release update model, however it also has several features aimed at easing the user experience: it comes with a desktop environment pre-installed, comes with multimedia decoding packages, and is able to automatically set up drivers for most hardware including graphics cards. On top of having its own wiki, Manjaro also has the advantage of working with nearly all tutorials originally made for Arch.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\7_Manjaro_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\7_Manjaro_SS0.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Gentoo -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\8_Gentoo.png">
-				</td>
+		<div id="distroInfo"> <!-- Gentoo 3 screenshots -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\8_Gentoo.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Gentoo</b> is a distro aimed at highly experienced users who need performance that is as well-optimized as possible. This is reflected within the fact it uses the Portage package manager, which, instead of downloading pre-compiled binaries in order to install new software, compiles it all on the user's machine. As a result, the possibilities of optimizing one's software specifically for their machine are far greater than on other systems. The distro's name is also a call to this, being a reference to gentoo penguins, the fastest swimming species of penguin.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Gentoo</b> is a distro aimed at highly experienced users who need performance that is as well-optimized as possible. This is reflected within the fact it uses the Portage package manager, which, instead of downloading pre-compiled binaries in order to install new software, compiles it all on the user's machine. As a result, the possibilities of optimizing one's software specifically for their machine are far greater than on other systems. The distro's name is also a call to this, being a reference to gentoo penguins, the fastest swimming species of penguin.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\8_Gentoo_SS0.png">
+			</div>
 			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS0.png">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS1.png">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\8_Gentoo_SS2.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+			<img src="assets\linuxDistributions\screenshots\8_Gentoo_SS1.png">
+			</div>
+			
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\8_Gentoo_SS2.png">
+			</div>
+		</div>
 		
 		<hr>
 		
-		<table> <!-- Kali -->
-			<tr>
-				<td style="vertical-align: top;">
-					<img style="height: 100%; width: 100%;" src="assets\linuxDistributions\logos\9_Kali.png">
-				</td>
+		<div id="distroInfo"> <!-- Kali 1 screenshot -->
+			<div id="infoUpper">
+				<div id="upperImage">
+					<img style="height: 100%; width: auto;" src="assets\linuxDistributions\logos\9_Kali.png">
+				</div>
 				
-				<td style="text-align: left; vertical-align: top;">
-					<p class="text-light"><b>Kali Linux</b>, formerly known as BackTrack, is a distro based off Debian's testing branch. Its intended use case is digital forensics and penetration testing, and it's equipped with around 600 tools for said purposes, such as cyber attack management tools, port scanners, packet analyzers, password crackers, SQL injection and database takeover tools and more.</p>
-				</td>
-			<tr>
+				<p class="text-light"><b>Kali Linux</b>, formerly known as BackTrack, is a distro based off Debian's testing branch. Its intended use case is digital forensics and penetration testing, and it's equipped with around 600 tools for said purposes, such as cyber attack management tools, port scanners, packet analyzers, password crackers, SQL injection and database takeover tools and more.</p>
+			</div>
 			
-			<tr style="height: 25px;"></tr>
-			
-			<tr>
-				<td colspan="2" style="vertical-align: top;">
-					<img style="height: 50%; width: 50%;" src="assets\linuxDistributions\screenshots\9_Kali_SS0.png">
-				</td>
-			</tr>
-		</table>
+			<div id="infoLower">
+				<img src="assets\linuxDistributions\screenshots\9_Kali_SS0.png">
+			</div>
+		</div>
+		
 			
 			<hr>
 			<h2 class="text-light">Linux Terminal</h2>
