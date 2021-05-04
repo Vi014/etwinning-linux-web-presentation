@@ -1,0 +1,54 @@
+#distroInfo {
+	display: flex;
+	flex-flow: column;
+}
+
+#infoUpper {
+	display: flex;
+	flex-flow: row;
+	
+	width: 100%;
+}
+
+#upperImage {
+	display: flex;
+	
+	height: 20vh;
+	
+	margin-right: 10px;
+}
+
+#infoLower {
+	height: 33vh;
+	
+	margin-top: 10px;
+}
+
+#infoLower img {
+	width: auto;
+	height: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+	#infoUpper {
+		flex-flow: column;
+	}
+	
+	#upperImage {
+		margin-right: unset;
+		
+		display:flex!important;
+		
+		justify-content:center!important;
+	}
+	
+	#infoLower {
+		width: 100%;
+		height: unset;
+	}
+	
+	#infoLower img {
+		width: 100%;
+		height: auto;
+	}
+}
