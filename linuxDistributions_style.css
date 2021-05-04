@@ -19,9 +19,6 @@
 }
 
 #infoLower {
-	display: flex;
-	justify-content: center;
-	
 	height: 33vh;
 	
 	margin-top: 10px;
@@ -38,9 +35,11 @@
 	}
 	
 	#upperImage {
-		justify-content: center;
-		
 		margin-right: unset;
+		
+		display:flex!important;
+		
+		justify-content:center!important;
 	}
 	
 	#infoLower {
