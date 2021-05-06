@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Linux</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<link href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/js-polyfills/keyboard.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.mousewheel-min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+	<script type="text/javascript" src="winbox.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="script.js"></script>
+	<script src="commands.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="./free-software.css">
+</head>
+<body class="bg-secondary">
+	<div class="maindiv mx-auto bg-dark">
+		<div class="row">
+			<div class="col-md-12">
+				<div style="padding-top: 40px;"></div>
+				<div id="term_demo" class="col-md-12 mx-auto"></div>
+				<div class="navbar col-md-12 mx-auto">
+					<nav class="nav nav-pills flex-column flex-sm-row">
+						<a class="flex-sm-fill text-sm-center nav-link text-light" aria-current="page" href="./index.html">Home</a>
+						<a class="flex-sm-fill text-sm-center nav-link active" href="free-software.html">What is free software?</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">FOSS terms</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Linux history</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="linuxDistributions.html">Linux distributions</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="./unixCommands.html">Common Unix commands</a>
+						<a class="flex-sm-fill text-sm-center nav-link text-light" href="#">Other FOSS OS'</a>
+					</nav>
+				</div>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Copyleft</h1>
+			</div>
+			<div class="col-12 col-lg-8 text-light my-auto">
+				<p>Copyleft is the practice of granting the right to freely distribute and modify intellectual property with the requirement that the same rights be preserved in derivative works created from that property.Copyleft in the form of licenses can be used to maintain copyright conditions for works ranging from computer software, to documents, art, scientific discoveries and even certain patents.</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<figure>
+					<img src="assets\freeSoftware\logos\copyleft.png" alt="">
+				</figure>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Free Software</h1>
+			</div>
+			<div class="col-12 text-light">
+				<p>Free software (or libre software) is computer software distributed under terms that allow users to run the software for any purpose as well as to study, change, and distribute it and any adapted versions.</p>
+				<p>Free Software the software must provide:</p>
+				<ul class="lead text-light">
+					<li>The freedom to run the program as you wish, for any purpose (freedom 0).</li>
+					<li>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.</li>
+					<li>The freedom to redistribute copies so you can help your neighbor (freedom 2).</li>
+					<li>The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</li>
+				</ul>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Freeware</h1>
+			</div>
+			<div class="col-12 col-lg-8 text-light my-auto">
+				<p>Freeware is software, most often proprietary, that is distributed at no monetary cost to the end user. There is no agreed-upon set of rights, license, or EULA that defines freeware unambiguously; every publisher defines its own rules for the freeware it offers.</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<figure>
+					<img src="assets\freeSoftware\logos\freeware.png" alt="">
+				</figure>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Nonfree Software</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>Software which fails to meet the definition of free software. It will fail to meet the standard of one or more of the four freedoms listed in the definition of free software.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Shareware</h1>
+			</div>
+			<div class="col-12 col-lg-4">
+				<figure>
+					<img src="assets\freeSoftware\logos\shareware.jpeg" alt="">
+				</figure>
+			</div>
+			<div class="col-12 col-lg-8 text-light my-auto">
+				<p>Shareware is a type of proprietary software which is initially provided free of charge to users, who are allowed and encouraged to make and share copies of the program.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Open Source Software</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>Open-source software (OSS) is a type of computer software in which source code is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. Open-source software may be developed in a collaborative public manner. Open-source software is a prominent example of open collaboration.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Gnu General Public Licence</h1>
+			</div>
+			<div class="col-12 col-lg-8 text-light my-auto">
+				<p>The GNU General Public License is a series of widely-used free software licenses that guarantee end users the freedom to run, study, share, and modify the software. The licenses were originally written by Richard Stallman, founder of the Free Software Foundation (FSF), for the GNU Project, and grant the recipients of a computer program the rights of the FreSoftware Definition.</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<figure>
+					<img src="assets\freeSoftware\logos\gnu.jpeg" alt="">
+				</figure>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>GNU</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>GNU is an extensive collection of free software, which can be used as an operating system or can be used in parts with other operating systems.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>FOSS and F/O</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>The first known use of the phrase free open-source software (in short FOSS or seldom F/OSS) on Usenet was in a posting on March 18, 1998, just a month after the term open source itself was coined.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Software Libre</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>While probably used earlier (as early as the 1990s) "Software libre" got broader public reception when in 2000 the European Commission adopted it. The word "libre", borrowed from the Spanish and French languages, means having liberty.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Reverse Engineering</h1>
+			</div>
+			<div class="col-12 col-lg-8 text-light my-auto">
+				<p>The process of analyzing an existing piece of nonfree technology to ascertain how it was designed or how it operates. The data collected can then be used in creating free software.</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<figure>
+					<img src="assets\freeSoftware\logos\reverse_engineer.jpeg" alt="">
+				</figure>
+			</div>
+			<div class="col-12">
+				<figure style="margin: 0 auto; padding-top: 24px; padding-bottom: 24px;">
+					<img src="assets\freeSoftware\logos\FSF.png" alt="">
+				</figure>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Free Software Foundation (FSF)</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>A nonprofit organization with a worldwide mission to promote computer user freedom and to defend the rights of all free software users.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Treacherous Computing</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>Computers that disallow users from making certain changes in the system. Enforcing this behavior is achieved by loading the hardware with a unique encryption key inaccessible to the rest of the system.</p>
+			</div>
+			<div class="col-12 text-center text-light">
+				<h1>Palladium and the TCPA</h1>
+			</div>
+			<div class="col-12 text-light text-justify">
+				<p>TCPA stands for the Trusted Computing Platform Alliance (TCPA), an initiative led by Intel. Their stated goal is a new computing platform for the next century that will provide for improved trust in the PC platform. palladium appears to be a Microsoft version which will be rolled out in future versions of Windows, will build on TCPA hardware, and will add some extra features.</p>
+			</div>
+			<div class="col-12">
+				<hr>
+			</div>
+			<div class="col-12 text-light">
+				<p>Some of the most popular licenses:</p>
+				<ul class="lead text-light">
+					<a href="https://choosealicense.com/licenses/agpl-3.0/"><li>GNU AGPLv3</li></a>
+					<a href="https://choosealicense.com/licenses/gpl-3.0/"><li>GGNU GPLv3</li></a>
+					<a href="https://choosealicense.com/licenses/lgpl-3.0/"><li>GNU LGPLv3</li></a>
+					<a href="https://choosealicense.com/licenses/mpl-2.0/"><li>Mozilla Public License 2.0</li></a>
+					<a href="https://choosealicense.com/licenses/apache-2.0/"><li>Apache License 2.0</li></a>
+					<a href="https://choosealicense.com/licenses/mit/"><li>MIT License</li></a>
+					<a href="https://choosealicense.com/licenses/bsl-1.0/"><li>Boost Software License 1.0</li></a>
+				</ul>   
+				<p><strong>GNU licences</strong> are the strongest copyleft license, conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved</p>
+				<p><a href="https://choosealicense.com/licenses/mpl-2.0/">Mozilla Public License 2.0.</a> Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license</p>
+				<p><a href="https://choosealicense.com/licenses/apache-2.0/">Apache License 2.0</a> A permissive license whose main conditions require preservation of copyright and license notices.</p>
+				<p><a href="https://choosealicense.com/licenses/mit/">MIT License.</a> A short and simple permissive license with conditions only requiring preservation of copyright and license notices</p>
+				<p><a href="https://choosealicense.com/licenses/bsl-1.0/">Boost Software License 1.0.</a> permissive license</p>    
+			</div>
+		
+		<div class="col-md-12">
+			<hr>
+			<h2 class="text-light">Linux Terminal</h2>
+			<p class="lead text-light"> Below, you will find a complete linux terminal where you can test out various commands.<br>
+			Dont be afraid to experiment, as all of the changes are temporary!</p>
+			<button type="button" class="btn btn-secondary" onclick="v86Window()">Open terminal</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
