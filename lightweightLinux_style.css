@@ -1,0 +1,37 @@
+#distroInfo {
+	display: flex;
+	flex-flow: column;
+}
+
+#distroInfo h2 {
+	text-align: center;
+}
+
+#infoMain {
+	display: flex;
+	flex-flow: row;
+	
+	width: 100%;
+}
+
+#mainImage {
+	display: flex;
+	
+	height: 20vh;
+	
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 1250px) {
+	#infoMain {
+		flex-flow: column;
+	}
+	
+	#mainImage {
+		margin-right: unset;
+		
+		display:flex!important;
+		
+		justify-content:center!important;
+	}
+}
